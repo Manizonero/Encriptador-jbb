@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Luckiest+Guy&family=Oxanium:wght@200..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(/asset/fondo.png);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;    
+}
+.title{
+    font-size: 35px;
+    color: #db9d9d;
+    font-family: "Bruno Ace", sans-serif;
+    padding: 2% 0% 0% 15%;
+    
+}
+
+.navpag{
+    display: flex;
+    position: absolute;
+    padding: 10% 0% 4% 70%;
+}
+
+.navpag_link{
+    font-size: 24px;
+    padding: 5px 12px 2% 12px;
+    text-decoration: none;
+    background-color: #d6dd9b;
+    border: 2px solid #7b65d3;
+    border-radius: 8px;
+    
+}
+
+.navpag_link:hover{
+    background-color: rgba(231, 159, 146, 0.884);
+}
+
+.dato{
+    display: flex;
+}
+
+img{
+    display: flex;
+    position: absolute;
+    padding: 20% 0% 0% 70%;
+    width: 14%;
+}
+
+p{
+    display: flex;
+    color: #eee5e5;
+    padding: 3% 33% 0% 15%;
+    font-size: 20px;
+    text-align: justify;
+    font-family: "Oxanium", sans-serif;
+}
+
+
+.container{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: #d8d0d0;
+    border: 4px solid #f8df00;
+}
+
+.texto{
+    position: absolute;
+    width: 42%;
+    height: 60%;
+    left: 12%;
+    top: 15%;
+    border: 4px solid #ce1616;
+}
