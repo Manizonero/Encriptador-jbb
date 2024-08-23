@@ -1,78 +1,384 @@
 @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Luckiest+Guy&family=Oxanium:wght@200..800&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     background-image: url(/asset/fondo.png);
     background-size: cover;
     background-position: center;
     height: 100vh;    
 }
-.title{
-    font-size: 35px;
-    color: #db9d9d;
-    font-family: "Bruno Ace", sans-serif;
-    padding: 2% 0% 0% 15%;
-    
-}
 
 .navpag{
     display: flex;
-    position: absolute;
-    padding: 10% 0% 4% 70%;
+    position: relative;
+    top: 2%;
 }
 
-.navpag_link{
-    font-size: 24px;
-    padding: 5px 12px 2% 12px;
+.navpag_link {
+    padding: 1%;
+    font-size: 16px;
+    color: #eedbdb;
     text-decoration: none;
-    background-color: #d6dd9b;
-    border: 2px solid #7b65d3;
+    background-color: #eb595969;
+    border: 1px solid #df8c77bb;
     border-radius: 8px;
-    
+    font-family: "Bruno Ace", sans-serif;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-.navpag_link:hover{
-    background-color: rgba(231, 159, 146, 0.884);
+.navpag_link:hover {
+    background-color: #df8c77bb;
+    color: #ffffff;
 }
 
-.dato{
+.titlesup {
     display: flex;
+    position: relative;
+    width: 65%;
+    left: 16%;
+    font-size: 35px;
+    color: #863631;
+    font-family: "Bruno Ace", sans-serif;
 }
 
-img{
-    display: flex;
-    position: absolute;
-    padding: 20% 0% 0% 70%;
-    width: 14%;
+.icontsup{
+    position: relative;
+    height: 35%;
+    width: 80%;
+    left: 10%;
+    top: 1%;
 }
 
-p{
-    display: flex;
-    color: #eee5e5;
-    padding: 3% 33% 0% 15%;
-    font-size: 20px;
+.textsup{
+    font-size: 24px;
     text-align: justify;
     font-family: "Oxanium", sans-serif;
 }
 
-
-.container{
+.titleinf {
+    display: flex;
     position: relative;
+    width: 30%;
+    left: 15%;
+    top: 6%;
+    font-size: 35px;
+    color: #ec6a61;
+    font-family: "Bruno Ace", sans-serif;
+}
+
+.icontinf{
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+    height: 25%;
+    width: 80%;
+    left: 10%;
+    top: 12%;
+}
+
+.textinf{
+    font-size: 24px;
+    text-align: justify;
+    font-family: "Oxanium", sans-serif;
+}
+
+.img{
+    position: absolute;
+    height: 18%;
+    top: 48%;
+    left: 45%;
+}
+
+.footer{
+    position: relative;
+    width: 30%;
+    top: 8%;
+    font-size: 18px;
+    font-family: "Bruno Ace", sans-serif;
+    left: 10%;
+}
+
+.econtpri {
+    display: flex;
+    flex-direction: row;
     width: 100vw;
     height: 100vh;
-    background: #d8d0d0;
-    border: 4px solid #f8df00;
 }
 
-.texto{
-    position: absolute;
-    width: 42%;
-    height: 60%;
-    left: 12%;
-    top: 15%;
-    border: 4px solid #ce1616;
+.econtlh {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 5%;
 }
+
+.enavpag {
+    display: flex;
+    position: relative;
+    padding: 5% 10% 0% 10%;
+}
+
+.enavpag_link {
+    font-size: 18px;
+    color: #eedbdb;
+    padding: 1% 2% 1% 2%;
+    text-decoration: none;
+    background-color: #eb595969;
+    border: 1px solid #df8c77bb;
+    border-radius: 8px;
+    font-family: "Bruno Ace", sans-serif;
+}
+
+.enavpag_link:hover {
+    background-color: #da7c57d3;
+}
+
+.etitle {
+    font-size: 20px;
+    color: #f3e5e5;
+    font-family: "Bruno Ace", sans-serif;
+    padding: 0% 0% 0% 5%;
+}
+
+.edato {
+    position: relative;
+    padding: 0% 0% 0% 5%;
+    color: #f3d5cd;
+    font-size: 22px;
+    text-align: justify;
+    font-family: "Oxanium", sans-serif;
+}
+
+.etextareain {
+    display: flex;
+    position: relative;
+    left: 5%;
+    width: 80%;
+    border: 5px double #c9b3b3;
+    border-radius: 8px;
+    background: none;
+    font-family: "Oxanium", sans-serif;
+    color: #d7d5e4;
+    font-size: 28px;
+}
+
+.etextareain:focus {
+    outline: none;
+}
+
+.etextoutmsn{
+    font-size: 24px;
+}
+
+.etextout {
+    overflow: auto;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
+    max-height: 200px;
+}
+
+.ebutonED {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 90%;
+    left: 10%;
+    gap: 10%;
+}
+
+.ebuton {
+    font-size: 18px;
+    color: #eedbdb;
+    padding: 1% 3% 1% 2%;
+    text-decoration: none;
+    background-color: #cea8709a;
+    border: 1px solid #df8c77bb;
+    border-radius: 8px;
+    font-family: "Bruno Ace", sans-serif;
+}
+
+.ebuton:hover {
+    background-color: #e69f66d3;
+}
+
+.econtrh {
+    display: flex;
+    position: relative;
+    width: 50%;
+    height: 100%;
+    gap: 5%;
+    flex-direction: column;
+}
+
+.eimg {
+    position: relative;
+    width: 21%;
+    height: 23%;
+    left: 35%;
+    top: 10%;
+    border: 4px solid #f5f5f5;
+    border-radius: 280px;
+}
+
+.ebutoncopy {
+    display: flex;
+    position: relative;
+    left: 75%;
+    top: 220%;
+    font-size: 18px;
+    color: #221010;
+    padding: 1% 2% 1% 2%;
+    text-decoration: none;
+    background-color: #cea8709a;
+    border: 1px solid #df8c77bb;
+    border-radius: 8px;
+    font-family: "Bruno Ace", sans-serif;
+}
+
+.ebutoncopy:hover {
+    background-color: #eb8e50fd;
+}
+
+.etextout {
+    display: flex;
+    position: relative;
+    width: 85%;
+    height: 34%;
+    left: 5%;
+    top: 14%;
+    border: 5px double #c9b3b3;
+    border-radius: 8px;
+    background: none;
+    font-family: "Oxanium", sans-serif;
+    color: #d7d5e4;
+    font-size: 28px;
+}
+
+.etextoutmsn {
+    color: #9e9797;
+}
+
+
+/* móviles */
+@media (max-width: 768px) {
+
+    .titlesup {
+        font-size: 18px;
+        left: 5%;
+        width: 90%;
+        top: 5%;
+        border: 1px solid #1b18e7;
+    }
+
+    .textsup {
+        position: relative;
+        width: 100%;
+        top: 15%;
+        font-size: 15px;
+        border: 1px solid #1b18e7;
+    }
+
+    .titleinf {
+        position: relative;
+        font-size: 20px;
+        left: 15%;
+        width: 70%;
+        top: 12%;
+        border: 1px solid #1b18e7;
+    }
+
+    .textinf {
+        position: relative;
+        top: 10%;
+        font-size: 16px;
+        border: 1px solid #1b18e7;
+    }
+
+    .img{
+    position: absolute;
+    width: 0%;
+    }
+
+    .footer {
+        width: 50%;
+        font-size: 16px;
+        top: 17%;
+    }
+
+    .econtpri {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    }
+
+    .econtlh{
+        position: relative;
+        width: 100%;
+        height: 150%;
+      }
+      
+    .etitle{
+        font-size: 16px;
+    }
+
+    .edato{
+        font-size: 18px;
+    }
+
+    .etextareain{
+    position: relative;
+    left: 5%;
+    width: 85%;
+    font-size: 14px;
+    }
+
+    .ebutonED {
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+    gap: 5px;
+    left: 25%;
+    }
+
+    .ebuton {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    }
+
+   .etextoutmsn{
+    font-size: 14px;
+    }
+
+    .econtrh {
+    position: relative;
+    width: 100%;
+    }
+
+    .eimg {
+    position: absolute;
+      width: 22%;
+      height: 27%;
+      left: 15%;
+      top: 58%;
+    }
+
+    .ebutoncopy {
+      left: 60%;
+    }
+}
+
+  
+
+
+
+ 
+  
+  
